@@ -1,4 +1,6 @@
 import { update as updateSnake, draw as drawSnake, Snake_Speed } from './snake.js'
+import { update as updateFood, draw as drawFood } from './food.js'
+
 
 let lastRenderTime = 0
 const gameBoard = document.getElementById('game-board')
@@ -18,9 +20,11 @@ window.requestAnimationFrame(main)
 
 function update() {
     updateSnake()
+    updateFood()
 }
 
 function draw() {
     gameBoard.innerHTML = ''
     drawSnake(gameBoard)
+    drawFood(gameBoard)
 }
