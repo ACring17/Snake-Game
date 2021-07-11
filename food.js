@@ -12,10 +12,10 @@ export function update() {
 }
 
 export function draw(gameBoard) {
-    const snakeElement = document.createElement('div')
-    snakeElement.style.gridRowStart = food.y
-    snakeElement.style.gridColumnStart = food.x
-    snakeElement.classList.add('food')
+    const foodElement = document.createElement('div')
+    foodElement.style.gridRowStart = food.y
+    foodElement.style.gridColumnStart = food.x
+    foodElement.classList.add('food')
     gameBoard.appendChild(foodElement)
 }
 
