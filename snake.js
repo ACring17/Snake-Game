@@ -1,14 +1,14 @@
-import { getInputDirection } from "./inputjs"
+import { getInputDirection } from "./input.js"
 
-export const Snake_Speed = 5
+export const SNAKE_SPEED = 5
 const snakeBody = [{ x: 11, y: 11 }]
 let newSegments = 0
 
 export function update() {
-      addSegments()
-     
-     const inputDirection = getInputDirection()
-     for (let i = snakeBody.length - 2; i >= 0; i--) {
+    addSegments()
+
+    const inputDirection = getInputDirection()
+    for (let i = snakeBody.length - 2; i >= 0; i--) {
         snakeBody[i + 1] = {...snakeBody[i] }
     }
 
@@ -32,7 +32,7 @@ export function expandSnake(amount) {
 
 export function onSnake(position, { ignoreHead = false } = {}) {
     return snakeBody.some((segment, index) => {
-        if (ignoreHead && index === 0) return flase
+        if (ignoreHead && index === 0) return false
         return equalPositions(segment, position)
     })
 }
