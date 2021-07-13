@@ -18,11 +18,11 @@ body {
 }
 
 .snake {
-    background-color: blue;
+    background-color: green;
     border: .25vmin solid black;
 }
 
 .food {
-    background-color: yellow;
+    background-color: purple;
     border: .25vmin solid black;
 }
