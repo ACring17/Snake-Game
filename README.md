@@ -3,3 +3,5 @@ The classic Snake Game! Eat the pellets to get bigger. Avoid Eating yourself or 
 
 
 Practice with JavaScript to make a fun interactive game. 
+
+Check out the game with this link: https://acring17.github.io/Snake-Game/
