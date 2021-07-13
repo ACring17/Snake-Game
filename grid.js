@@ -10,6 +10,6 @@ export function randomGridPosition() {
 export function outsideGrid(position) {
     return (
         position.x < 1 || position.x > Grid_Size ||
-        position.y < 1 || position.x > Grid_Size
+        position.y < 1 || position.y > Grid_Size
     )
 }
