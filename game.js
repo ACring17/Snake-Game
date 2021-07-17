@@ -33,7 +33,7 @@ function update() {
     updateSnake()
     updateFood()
     checkDeath()
-    countTimer()
+    /*countTimer()*/
 }
 
 function draw() {
