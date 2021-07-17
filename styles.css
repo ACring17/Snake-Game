@@ -17,6 +17,13 @@ body {
     grid-template-columns: repeat(21, 1fr);
 }
 
+#timer {
+    background-color: yellow;
+    width: 1vmin;
+    height: 1vmin;
+    border: .25vmin solid black;
+}
+
 .snake {
     background-color: green;
     border: .25vmin solid black;
