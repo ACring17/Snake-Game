@@ -3,11 +3,12 @@ import { update as updateFood, draw as drawFood } from './food.js'
 import { outsideGrid } from './grid.js'
 /*import { countTimer } from './timer.js'*/
 
-
+/* For the start of the game  */
 let lastRenderTime = 0
 let gameOver = false
 const gameBoard = document.getElementById('game-board')
 
+/* Main function updating every second  */
 function main(currentTime) {
     if (gameOver) {
         if (confirm('You Lost! Press Ok to restart.')) {
@@ -36,12 +37,14 @@ function update() {
     /*countTimer()*/
 }
 
+/* Creates the Snake and Food */
 function draw() {
     gameBoard.innerHTML = ''
     drawSnake(gameBoard)
     drawFood(gameBoard)
 }
 
+/* Checking if player has lost */
 function checkDeath() {
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
 }
