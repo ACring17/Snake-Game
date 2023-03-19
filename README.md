@@ -10,4 +10,4 @@ Practice with JavaScript to make a fun interactive game. This project taught me 
 
 Check out the game with this link: https://acring17.github.io/Snake-Game/
 
-https://github.com/ACring17/Project-Portfolio/blob/main/images/snake-game.jpeg
+![alt text] (https://github.com/ACring17/Project-Portfolio/blob/main/images/snake-game.jpeg)
